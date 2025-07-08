@@ -52,7 +52,7 @@ http://localhost:82
 Aplikasi ini membutuhkan koneksi ke database **MySQL**. File konfigurasi ada di `conn.php`:
 
 ```php
-$host = '192.168.0.80';  // IP atau nama service database
+$host = 'ip';  // IP atau nama service database
 $db_name = 'web_blog';
-$username = 'root';
-$password = 'p455w0rd';
+$username = 'user';
+$password = 'pw';
