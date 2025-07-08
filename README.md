@@ -42,7 +42,7 @@ docker compose up --build
 Buka browser dan akses:
 
 ```
-http://localhost
+http://localhost:82
 ```
 
 ---
