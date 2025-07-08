@@ -21,29 +21,6 @@ PHP Native berarti menggunakan PHP murni tanpa framework tambahan seperti Larave
 
 ---
 
-## 🗂️ Struktur Proyek
-
-```
-
-src/
-├── style/                # Folder CSS
-├── .htaccess             # Konfigurasi URL rewrite (opsional)
-├── conn.php              # Koneksi ke database MySQL
-├── edit\_blog.php         # Edit artikel blog
-├── hapus.php             # Hapus artikel blog
-├── index.php             # Halaman utama (daftar artikel)
-├── login.php             # Form login
-├── logout.php            # Logout user
-├── register.php          # Registrasi user
-├── tambah\_blog.php       # Tambah artikel baru
-├── docker-compose.yml    # Konfigurasi Docker Compose
-├── dockerfile            # Dockerfile untuk container PHP
-├── httpd.vhost.conf      # Konfigurasi virtual host Apache
-
-````
-
----
-
 ## ⚙️ Langkah Menjalankan Proyek
 
 ### 1. Persiapan
