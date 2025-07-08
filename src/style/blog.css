@@ -1,0 +1,133 @@
+/* --- Google Font Import --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* --- General Body Styling --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5; /* Latar belakang yang sama dengan halaman utama */
+    color: #333;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* --- Form Container --- */
+.form-container {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+}
+
+h1 {
+    color: #1c2938;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+/* --- Form Elements Styling --- */
+form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #007bff; /* Warna biru saat aktif */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+form textarea {
+    resize: vertical; /* Memperbolehkan user mengubah tinggi textarea */
+    min-height: 150px;
+}
+
+/* --- Buttons and Links --- */
+.form-actions {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem; /* Jarak antar tombol */
+    margin-top: 1.5rem;
+    align-items: center;
+}
+
+form button[type="submit"],
+.form-actions a {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+/* --- Tombol Simpan --- */
+form button[type="submit"] {
+    background-color: #007bff; /* Biru */
+    color: #fff;
+}
+
+form button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* --- Tombol Kembali --- */
+.form-actions a {
+    background-color: #6c757d; /* Abu-abu */
+    color: #fff;
+}
+
+.form-actions a:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+/* --- Error Message Styling --- */
+.error-message {
+    color: #dc3545; /* Merah */
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+    .form-container {
+        padding: 2rem;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+}

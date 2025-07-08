@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  apache-forground:
+    build: .
+    container_name: apache-forground
+    image: latest
+    volumes:
+      - ./src:/var/www/html
+      - ./httpd.vhost.conf:/etc/apache2/sites-available/000-default.conf
+    ports:
+      - 82:80
